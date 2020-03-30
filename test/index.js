@@ -1,16 +1,16 @@
 const assert = require('assert')
 const extend = require('xtend')
 const HdKeyring = require('../')
-const sigUtil = require('eth-sig-util')
-const ethUtil = require('ethereumjs-util')
+const sigUtil = require('cfx-sig-util')
+const ethUtil = require('cfx-util')
 
 
 // Sample account:
 const privKeyHex = 'b8a9c05beeedb25df85f8d641538cbffedf67216048de9c678ee26260eb91952'
 
 const sampleMnemonic = 'finish oppose decorate face calm tragic certain desk hour urge dinosaur mango'
-const firstAcct = '0x1c96099350f13d558464ec79b9be4445aa0ef579'
-const secondAcct = '0x1b00aed43a693f3a957f9feb5cc08afa031e37a0'
+const firstAcct = '0x1a35d646c298971085c3edc9087e9f1ceb7861ed'
+const secondAcct = '0x1de9f4b801c6a9f83d6d16e1d39ccdbf821bb896'
 
 describe('hd-keyring', function() {
 
@@ -247,7 +247,7 @@ describe('hd-keyring', function() {
   describe('custom hd paths', function () {
 
     it('can deserialize with an hdPath param and generate the same accounts.', function (done) {
-      const hdPathString = `m/44'/60'/0'/0`
+      const hdPathString = `m/44'/98689'/0'/0`
       const sampleMnemonic = 'finish oppose decorate face calm tragic certain desk hour urge dinosaur mango'
 
       keyring.deserialize({
@@ -390,7 +390,7 @@ describe('hd-keyring', function() {
       const address = firstAcct
       const message = '0x68656c6c6f20776f726c64'
 
-      const privateKeyBuffer = Buffer.from('8e82d2d74c50e5c8460f771d38a560ebe1151a9134c65a7e92b28ad0cfae7151', 'hex')
+      const privateKeyBuffer = Buffer.from('8907b1cbf41088bddc1a4c6ae14b8ab4e0c52121f6e2e8eb765e7f4552f6d4e0', 'hex')
       const expectedSig = sigUtil.personalSign(privateKeyBuffer, { data: message })
 
       keyring.deserialize({
@@ -423,7 +423,7 @@ describe('hd-keyring', function() {
         message: {}
       }
 
-      const privateKeyBuffer = Buffer.from('8e82d2d74c50e5c8460f771d38a560ebe1151a9134c65a7e92b28ad0cfae7151', 'hex')
+      const privateKeyBuffer = Buffer.from('8907b1cbf41088bddc1a4c6ae14b8ab4e0c52121f6e2e8eb765e7f4552f6d4e0', 'hex')
       const expectedSig = sigUtil.signTypedData(privateKeyBuffer, { data: typedData })
 
       keyring.deserialize({

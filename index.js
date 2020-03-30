@@ -1,13 +1,13 @@
 const EventEmitter = require('events').EventEmitter
-const hdkey = require('ethereumjs-wallet/hdkey')
-const Wallet = require('ethereumjs-wallet')
-const SimpleKeyring = require('eth-simple-keyring')
+const { EthereumHDKey: hdkey } = require('cfx-wallet/dist/hdkey')
+const { Wallet } = require('cfx-wallet')
+const SimpleKeyring = require('cfx-simple-keyring')
 const bip39 = require('bip39')
-const ethUtil = require('ethereumjs-util')
-const sigUtil = require('eth-sig-util')
+const ethUtil = require('cfx-util')
+const sigUtil = require('cfx-sig-util')
 
 // Options:
-const hdPathString = `m/44'/60'/0'/0`
+const hdPathString = `m/44'/98689'/0'/0`
 const type = 'HD Key Tree'
 
 class HdKeyring extends SimpleKeyring {

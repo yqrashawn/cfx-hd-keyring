@@ -1,6 +1,6 @@
 {
-  "name": "eth-hd-keyring",
-  "version": "3.5.0",
+  "name": "cfx-hd-keyring",
+  "version": "0.0.1",
   "description": "A simple standard interface for a seed phrase generated set of Ethereum accounts.",
   "main": "index.js",
   "scripts": {
@@ -8,25 +8,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MetaMask/eth-hd-keyring.git"
+    "url": "git+ssh://git@github.com/yqrashawn/cfx-hd-keyring.git"
   },
   "keywords": [
-    "ethereum",
+    "conflux",
     "keyring"
   ],
   "author": "Dan Finlay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MetaMask/eth-hd-keyring/issues"
+    "url": "https://github.com/yqrashawn/cfx-hd-keyring/issues"
   },
-  "homepage": "https://github.com/MetaMask/eth-hd-keyring#readme",
+  "homepage": "https://github.com/yqrashawn/cfx-hd-keyring#readme",
   "dependencies": {
+    "cfx-util": "^0.0.1-c",
     "bip39": "^2.2.0",
-    "eth-sig-util": "^2.4.4",
-    "eth-simple-keyring": "^3.5.0",
+    "cfx-sig-util": "^0.0.1-a",
+    "cfx-simple-keyring": "^0.0.1",
     "ethereumjs-abi": "^0.6.5",
-    "ethereumjs-util": "^5.1.1",
-    "ethereumjs-wallet": "^0.6.0",
+    "cfx-wallet": "^0.0.1-b",
     "events": "^1.1.1",
     "xtend": "^4.0.1"
   },
