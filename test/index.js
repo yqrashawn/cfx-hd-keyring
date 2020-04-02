@@ -1,12 +1,7 @@
 const assert = require('assert')
-const extend = require('xtend')
 const HdKeyring = require('../')
 const sigUtil = require('cfx-sig-util')
 const ethUtil = require('cfx-util')
-
-
-// Sample account:
-const privKeyHex = 'b8a9c05beeedb25df85f8d641538cbffedf67216048de9c678ee26260eb91952'
 
 const sampleMnemonic = 'finish oppose decorate face calm tragic certain desk hour urge dinosaur mango'
 const firstAcct = '0x1bd85a48ec6f544f4ec8335203126829164ccd9e'
@@ -19,14 +14,14 @@ describe('hd-keyring', function() {
     keyring = new HdKeyring()
   })
 
-  describe('constructor', function(done) {
+  describe('constructor', function() {
     it('constructs', function (done) {
       keyring = new HdKeyring({
         mnemonic: sampleMnemonic,
         numberOfAccounts: 2,
       })
 
-      const accounts = keyring.getAccounts()
+      keyring.getAccounts()
       .then((accounts) => {
         assert.equal(accounts[0], firstAcct)
         assert.equal(accounts[1], secondAcct)
@@ -121,7 +116,7 @@ describe('hd-keyring', function() {
         }
       })
 
-      const output = keyring.getAccounts()
+      keyring.getAccounts()
       .then((output) => {
         assert.equal(output[0], '0x' + desiredOutput)
         assert.equal(output.length, 1)
@@ -133,7 +128,6 @@ describe('hd-keyring', function() {
   describe('#signPersonalMessage', function () {
     it('returns the expected value', function (done) {
       const address = firstAcct
-      const privateKey = new Buffer(privKeyHex, 'hex')
       const message = '0x68656c6c6f20776f726c64'
 
       keyring.deserialize({
@@ -161,8 +155,6 @@ describe('hd-keyring', function() {
   })
 
   describe('#signTypedData', () => {
-    const privKey = Buffer.from(privKeyHex, 'hex')
-
     const typedData = [
       {
         type: 'string',
