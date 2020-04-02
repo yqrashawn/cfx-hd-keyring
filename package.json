@@ -1,6 +1,6 @@
 {
   "name": "cfx-hd-keyring",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple standard interface for a seed phrase generated set of Ethereum accounts.",
   "main": "index.js",
   "scripts": {

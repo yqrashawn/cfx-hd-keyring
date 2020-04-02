@@ -9,8 +9,8 @@ const ethUtil = require('cfx-util')
 const privKeyHex = 'b8a9c05beeedb25df85f8d641538cbffedf67216048de9c678ee26260eb91952'
 
 const sampleMnemonic = 'finish oppose decorate face calm tragic certain desk hour urge dinosaur mango'
-const firstAcct = '0x1a35d646c298971085c3edc9087e9f1ceb7861ed'
-const secondAcct = '0x1de9f4b801c6a9f83d6d16e1d39ccdbf821bb896'
+const firstAcct = '0x1bd85a48ec6f544f4ec8335203126829164ccd9e'
+const secondAcct = '0x1f4a28c277897af452e76e453587c54e2368bec8'
 
 describe('hd-keyring', function() {
 
@@ -247,7 +247,7 @@ describe('hd-keyring', function() {
   describe('custom hd paths', function () {
 
     it('can deserialize with an hdPath param and generate the same accounts.', function (done) {
-      const hdPathString = `m/44'/98689'/0'/0`
+      const hdPathString = `m/44'/503'/0'/0`
       const sampleMnemonic = 'finish oppose decorate face calm tragic certain desk hour urge dinosaur mango'
 
       keyring.deserialize({
@@ -390,7 +390,7 @@ describe('hd-keyring', function() {
       const address = firstAcct
       const message = '0x68656c6c6f20776f726c64'
 
-      const privateKeyBuffer = Buffer.from('8907b1cbf41088bddc1a4c6ae14b8ab4e0c52121f6e2e8eb765e7f4552f6d4e0', 'hex')
+      const privateKeyBuffer = Buffer.from('6205b9fd4ce82c9e096db6a9ae91b298ba7b568d51f64b3bae6c01309392e3c8', 'hex')
       const expectedSig = sigUtil.personalSign(privateKeyBuffer, { data: message })
 
       keyring.deserialize({
@@ -423,7 +423,7 @@ describe('hd-keyring', function() {
         message: {}
       }
 
-      const privateKeyBuffer = Buffer.from('8907b1cbf41088bddc1a4c6ae14b8ab4e0c52121f6e2e8eb765e7f4552f6d4e0', 'hex')
+      const privateKeyBuffer = Buffer.from('6205b9fd4ce82c9e096db6a9ae91b298ba7b568d51f64b3bae6c01309392e3c8', 'hex')
       const expectedSig = sigUtil.signTypedData(privateKeyBuffer, { data: typedData })
 
       keyring.deserialize({

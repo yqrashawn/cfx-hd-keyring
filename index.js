@@ -7,7 +7,7 @@ const ethUtil = require('cfx-util')
 const sigUtil = require('cfx-sig-util')
 
 // Options:
-const hdPathString = `m/44'/98689'/0'/0`
+const hdPathString = `m/44'/503'/0'/0`
 const type = 'HD Key Tree'
 
 class HdKeyring extends SimpleKeyring {
