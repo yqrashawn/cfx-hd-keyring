@@ -24,7 +24,7 @@
     "bip39": "^2.2.0",
     "cfx-sig-util": ">=0.0.4",
     "cfx-simple-keyring": ">=0.0.4",
-    "cfx-util": ">=0.0.3",
+    "cfx-util": ">=0.0.4",
     "cfx-wallet": ">=0.0.4",
     "ethereumjs-abi": "^0.6.5",
     "events": "^1.1.1",
