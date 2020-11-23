@@ -22,8 +22,8 @@
   "homepage": "https://github.com/yqrashawn/cfx-hd-keyring#readme",
   "dependencies": {
     "bip39": "^2.2.0",
-    "cfx-sig-util": ">=0.0.4",
-    "cfx-simple-keyring": ">=0.0.4",
+    "cfx-sig-util": ">=2.0.3",
+    "cfx-simple-keyring": ">=0.0.5",
     "cfx-util": ">=0.0.3",
     "cfx-wallet": ">=0.0.4",
     "ethereumjs-abi": "^0.6.5",
