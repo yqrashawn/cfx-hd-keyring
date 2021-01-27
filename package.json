@@ -20,7 +20,7 @@
   "dependencies": {
     "bip39": "^2.2.0",
     "cfx-sig-util": ">=2.1.0",
-    "cfx-simple-keyring": ">=0.0.5",
+    "cfx-simple-keyring": ">=0.1.0",
     "cfx-util": ">=0.0.3",
     "cfx-wallet": ">=0.0.4",
     "events": "^1.1.1",
@@ -43,7 +43,11 @@
     "branches": [
       "+([0-9])?(.{+([0-9]),x}).x",
       "master",
-      { "name": "alpha", "channel": "alpha", "prerelease": "alpha" }
+      {
+        "name": "alpha",
+        "channel": "alpha",
+        "prerelease": "alpha"
+      }
     ]
   }
 }
