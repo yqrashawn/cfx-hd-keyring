@@ -800,10 +800,10 @@ cfx-sig-util@>=2.1.1:
     tweetnacl "^1.0.0"
     tweetnacl-util "^0.15.0"
 
-cfx-simple-keyring@>=0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.1.2.tgz#3b17882eb278b7cad14bb9a71ebeb0c967d63cc9"
-  integrity sha512-CulzQkeqWYxKj5NXlc6kcLUgWGs5fEaKQoNnDNLMeg+6LiGdaJQ7mQoPRJ814euUckFQJJV5pSDg/ANelIM2bg==
+cfx-simple-keyring@>=0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/cfx-simple-keyring/-/cfx-simple-keyring-0.2.0.tgz#bafc0ece2c65331532199c8b2c5c8340324068a1"
+  integrity sha512-wYc3KAA7o2znrbXCEftGpdbVKxIQLQst9iqBD0trwHPyQBcw/SyC8eOsf4HzXkM6tA75XtQNluxPfAj2HSontw==
   dependencies:
     cfx-sig-util ">=2.1.1"
     cfx-util ">=0.0.4"
