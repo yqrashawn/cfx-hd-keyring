@@ -1,6 +1,6 @@
 {
   "name": "cfx-hd-keyring",
-  "version": "0.0.0",
+  "version": "0.0.9",
   "description": "A simple standard interface for a seed phrase generated set of Ethereum accounts.",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,10 @@
   "homepage": "https://github.com/yqrashawn/cfx-hd-keyring#readme",
   "dependencies": {
     "bip39": "^2.2.0",
-    "cfx-sig-util": ">=2.1.0",
-    "cfx-simple-keyring": ">=0.1.0",
+    "cfx-sig-util": ">=2.1.1",
+    "cfx-simple-keyring": ">=0.1.2",
     "cfx-util": ">=0.0.3",
-    "cfx-wallet": ">=0.0.4",
+    "cfx-wallet": ">=0.0.5",
     "events": "^1.1.1",
     "xtend": "^4.0.1"
   },
