@@ -19,9 +19,9 @@
   "homepage": "https://github.com/yqrashawn/cfx-hd-keyring#readme",
   "dependencies": {
     "bip39": "^2.2.0",
-    "cfx-sig-util": ">=2.1.1",
-    "cfx-simple-keyring": ">=0.2.0",
-    "cfx-util": ">=0.0.3",
+    "cfx-sig-util": ">=2.1.2",
+    "cfx-simple-keyring": ">=0.2.1",
+    "cfx-util": ">=0.0.4",
     "cfx-wallet": ">=0.0.5",
     "events": "^1.1.1",
     "xtend": "^4.0.1"
